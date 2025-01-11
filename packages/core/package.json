@@ -1,0 +1,30 @@
+{
+  "name": "github-pr-fork-to-fork-core",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "type": "module",
+  "module": "dist/esm/src/index.js",
+  "types": "dist/esm/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm clean && pnpm build:esm && pnpm build:esm:types",
+    "build:esm": "swc src -d dist/esm --config-file ./swc.config.json",
+    "build:esm:types": "tsc --emitDeclarationOnly && tsc-alias",
+    "clean": "rimraf ./dist",
+    "lint": "biome lint src",
+    "lint:fix": "biome check --write src"
+  },
+  "dependencies": {
+    "@swc/cli": "0.5.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "typescript": "5.7.3",
+    "rimraf": "6.0.1",
+    "vite": "6.0.7",
+    "vitest": "2.1.8",
+    "tsc-alias": "1.8.10"
+  }
+}

@@ -1,0 +1,1 @@
+export { appendForkToForkPullRequestLink } from './main';

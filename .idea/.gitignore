@@ -1,0 +1,15 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+/biome.xml
+/git_toolbox_blame.xml
+/git_toolbox_prj.xml
+/*.iml
+/misc.xml
+/modules.xml

@@ -1,0 +1,19 @@
+{
+  "name": "GitHub Pull Request Fork to Fork",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "An extension that ensures pull requests from your forked repository always target your fork, not the original repository. Simplify your workflow and avoid mistakes!",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}

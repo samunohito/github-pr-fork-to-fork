@@ -1,0 +1,6 @@
+{
+  "name": "github-pr-fork-to-fork",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0"
+}
