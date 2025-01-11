@@ -2,7 +2,7 @@
   "name": "GitHub Pull Request Fork to Fork",
   "version": "0.0.1",
   "manifest_version": 3,
-  "description": "An extension that adds a button to create pull requests targeting your forked repository directly. Simplify your workflow and avoid targeting the wrong repository!",
+  "description": "Simplify your workflow with a button to create pull requests targeting your forked repository. Avoid mistakes and stay focused!",
   "permissions": [
     "activeTab"
   ],
