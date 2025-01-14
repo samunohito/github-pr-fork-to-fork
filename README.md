@@ -12,7 +12,7 @@
 ## Installation
 
 ### Google Chrome
-1. Download the extension from the [Chrome Web Store](#) (link coming soon).
+1. Download the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/github-pull-request-fork/bhndgindoedbbbecfbjpoleibfnpcomn).
 2. Click **Add to Chrome** and confirm the installation.
 
 ## Usage
