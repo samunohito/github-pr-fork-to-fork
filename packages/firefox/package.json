@@ -1,0 +1,25 @@
+{
+  "name": "github-pr-fork-to-fork-firefox",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "build": "pnpm clean && pnpm --filter github-pr-fork-to-fork-core build && vite build",
+    "clean": "rimraf ./dist",
+    "lint": "biome lint src",
+    "lint:fix": "biome check --write src"
+  },
+  "dependencies": {
+    "debounce": "^2.2.0",
+    "github-pr-fork-to-fork-core": "workspace:*",
+    "vite": "6.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/chrome": "^0.0.293",
+    "rimraf": "6.0.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "tsc-alias": "1.8.10",
+    "typescript": "5.7.3"
+  }
+}

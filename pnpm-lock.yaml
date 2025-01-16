@@ -64,6 +64,37 @@ importers:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.5)
 
+  packages/firefox:
+    dependencies:
+      debounce:
+        specifier: ^2.2.0
+        version: 2.2.0
+      github-pr-fork-to-fork-core:
+        specifier: workspace:*
+        version: link:../core
+      vite:
+        specifier: 6.0.7
+        version: 6.0.7(@types/node@22.10.5)
+    devDependencies:
+      '@biomejs/biome':
+        specifier: 1.9.4
+        version: 1.9.4
+      '@types/chrome':
+        specifier: ^0.0.293
+        version: 0.0.293
+      rimraf:
+        specifier: 6.0.1
+        version: 6.0.1
+      rollup-plugin-copy:
+        specifier: ^3.5.0
+        version: 3.5.0
+      tsc-alias:
+        specifier: 1.8.10
+        version: 1.8.10
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+
 packages:
 
   '@biomejs/biome@1.9.4':

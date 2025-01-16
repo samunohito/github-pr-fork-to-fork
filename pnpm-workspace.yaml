@@ -1,3 +1,4 @@
 packages:
- - 'packages/core'
- - 'packages/chrome'
+  - 'packages/core'
+  - 'packages/chrome'
+  - 'packages/firefox'

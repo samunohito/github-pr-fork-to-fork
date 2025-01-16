@@ -1,0 +1,16 @@
+{
+  "name": "GitHub Pull Request Fork to Fork",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Simplify your workflow with a button to create pull requests targeting your forked repository. Avoid mistakes and stay focused!",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
