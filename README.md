@@ -15,6 +15,10 @@
 1. Download the extension from the [Chrome Web Store](https://chromewebstore.google.com/detail/github-pull-request-fork/bhndgindoedbbbecfbjpoleibfnpcomn).
 2. Click **Add to Chrome** and confirm the installation.
 
+### Mozilla Firefox
+1. Download the extension from the [Addons Mozilla Org](https://addons.mozilla.org/ja/firefox/addon/githubpullrequest-fork-to-fork/).
+2. Click **Add to Firefox** and confirm the installation.
+
 ## Usage
 
 1. Navigate to the forked repository where you want to create a pull request.
@@ -57,3 +61,4 @@ This project is licensed under the MIT License.
 
 ## Supported Browsers
 - Google Chrome
+- Mozilla Firefox
