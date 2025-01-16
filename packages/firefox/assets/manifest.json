@@ -1,4 +1,9 @@
 {
+  "browser_specific_settings": {
+    "gecko": {
+      "id": ""
+    }
+  },
   "name": "GitHub Pull Request Fork to Fork",
   "version": "0.0.1",
   "manifest_version": 3,
