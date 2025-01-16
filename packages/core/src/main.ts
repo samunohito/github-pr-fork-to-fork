@@ -40,7 +40,7 @@ export async function appendForkToForkPullRequestLink() {
       continue;
     }
 
-    const clonedElemId = (compareLinkElement.textContent?.includes('Compare & pull request') ? 'compare-pull-request' : 'new-pull-request') + '-fork-to-fork'
+    const clonedElemId = `${compareLinkElement.textContent?.includes('Compare & pull request') ? 'compare-pull-request' : 'new-pull-request'}-fork-to-fork`
     if (document.getElementById(clonedElemId)) {
       // すでに複製したリンクが存在する場合はスキップ（ID生成ロジックを使いまわしたいのでここでやってる）
       continue;
@@ -53,7 +53,7 @@ export async function appendForkToForkPullRequestLink() {
     const cloneCompareLinkElement = compareLinkElement.cloneNode(true) as HTMLAnchorElement;
     cloneCompareLinkElement.id = clonedElemId;
     cloneCompareLinkElement.setAttribute('href', buildPullRequestUrl(detectedCompareLink, orgName, repoName, defaultBranch));
-    cloneCompareLinkElement.innerHTML = compareLinkElement.innerHTML + ' to fork';
+    cloneCompareLinkElement.innerHTML = `${compareLinkElement.innerHTML} to fork`;
 
     // そのまま突っ込むと表示がおかしくなるので微調整するためのdivを作成
     const styledDiv = document.createElement('div');
